@@ -51,11 +51,11 @@ module ShopMethods
     end
   end
 
-  def self.included(base)
-    base.extend(ClassMethods)
-    base.class_eval do 
-      include InstanceMethods
-    end
-  end
+  # def self.included(base)
+  #   base.extend(ClassMethods)
+  #   base.class_eval do 
+  #     include InstanceMethods
+  #   end
+  # end
 end 
 

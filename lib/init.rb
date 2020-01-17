@@ -1,15 +1,32 @@
 require_relative 'shop_methods'
-require_relative 'item'
+require_relative 'car'
 require_relative 'cart'
 
 cart = Cart.new
 
-item1 = Item.new("Tesla X",  120_000,  { type: "sport"} )
-item2 = Item.new("Porhse",   190_000,  { type: "pass"} )
-item3 = Item.new("BMW x4",   180_000,  { type: "no"} )
+car1 = Car.new("Tesla S",  120_000,  { type: "sport"} )
+car2 = Car.new("Porhse",   190_000,  { type: "pass"} )
+car3 = Car.new("BMW x4",   180_000,  { type: "no"} )
+car4 = Car.new("BMW x6",   180_000,  { type: "no"} )
 
-cart.add_items([item1, item2, item3]) # Buy
-cart.save_to_file # save in DB
+p cart.add_items([car1, car2, car3, car4]) # Buy
+p cart.save_to_file # save in DB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

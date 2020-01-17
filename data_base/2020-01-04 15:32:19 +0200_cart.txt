@@ -1,0 +1,3 @@
+Car: Tesla S:, price: 120000, {:type=>"sport"}
+Car: Porhse:, price: 190000, {:type=>"pass"}
+Car: BMW x4:, price: 180000, {:type=>"no"}

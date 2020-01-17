@@ -1,28 +1,13 @@
 require 'pry'
 
-class Item
+class Car
   attr_accessor :name, :price, :options
-
-  include ShopMethods
-  # include ItemShop::Info
 
   def initialize(name, price, options = {})
     @name = name
     @price = price  
     @options = options
   end
- 
-  # def self.price 
-  #   100
-  # end
-
-  # def validate
-  #   if options[:price] < self.class.price
-  #     p 'Yes'
-  #   else
-  #     p 'no'
-    # end
-  # end
 end
 
 
