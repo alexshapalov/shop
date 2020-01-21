@@ -10,7 +10,12 @@ car3 = Car.new("BMW x4",   180_000,  { type: "no"} )
 car4 = Car.new("BMW x6",   180_000,  { type: "no"} )
 
 p cart.add_items([car1, car2, car3, car4]) # Buy
-p cart.save_to_file # save in DB
+
+if cart.save_to_file # save in DB
+  puts 'Save ok'
+else
+  puts "Eror"
+end
 
 
 

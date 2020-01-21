@@ -1,13 +1,13 @@
 # require 'pry'
 
 class Car
-  # attr_accessor :name, :price, :options
+  attr_accessor :name, :price, :options
 
-  # def initialize(name, price, options = {})
-  #   @name = name
-  #   @price = price  
-  #   @options = options
-  # end
+  def initialize(name, price, options = {})
+    @name = name
+    @price = price  
+    @options = options
+  end
 end
 
 # binding.pry
