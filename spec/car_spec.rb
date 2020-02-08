@@ -1,11 +1,19 @@
-require 'rspec'
+# require 'rspec'
 require_relative "../lib/car.rb"
 
-describe Car do
-  it 'create new item car' do
-    car_item = Car.new("Tesla", 120_000)
+describe Car do  
+  context 'create new car' do
 
-    expect(car_item.name).to eq(car_item.name)
-    expect(car_item.price).to eq(120_000)
+    before(:each) do
+      @car_item = Car.new("Tesla", 120_000)
+    end
+
+    it 'car with name' do
+      expect(@car_item.name).to eq("Tesla")
+    end
+
+    it 'car with price' do
+      expect(@car_item.price).to eq(120_000)
+    end
   end
 end

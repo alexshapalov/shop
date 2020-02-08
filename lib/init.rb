@@ -1,5 +1,5 @@
 require_relative 'shop_methods'
-require_relative 'car'
+require_relative 'car' 
 require_relative 'cart'
 
 cart = Cart.new
@@ -16,55 +16,3 @@ if cart.save_to_file # save in DB
 else
   puts "Eror"
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# item1.methods - Object.methods
-# item1.item_info(item1) 
-# puts item1.price
-# puts item2.price
-# puts item3.price
-
-# p cart.methods 
-# p item1.methods 
-
-# cart.add_items([item1, item2, item3])
-
-# cart.save_to_file
-# cart.read_from_file 
-
-#Dir.mkdir("/tmp")
-# Dir.exists?('/data_base')
-
-# Ruby Reflection - #kind_of?, #respond_to?, #send 
-# Object Methods
-
-# p cart.kind_of?(Cart)
-# p cart.respond_to?(:save_to_file)
-# p cart.send
-

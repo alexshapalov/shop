@@ -17,7 +17,7 @@ class Cart
 
   def save
     @date = Time.now
-    File.open("./data_base/#{@date}_cart.csv", "w") do |f|
+    File.open("../data_base/#{@date}_cart.csv", "w") do |f|
       @items.each { |i| f.puts "Car: #{i.name}:, price: #{i.price}, #{i.options}" }
     end
   end

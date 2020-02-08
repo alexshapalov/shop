@@ -22,7 +22,6 @@ class TransactionData
 
     @date = Time.now.strftime("%Y%m%d %H:%M:%S")
 
-    CSV.open("data_base/#{@date}_transaction.csv", "wb") do |csv|  
       csv << ["ISO", "MID", "Reference ID", "data", "Transaction_ID", "Approval",  "Processed_Date", "Type"] 
       csv << [@ISO, @MID, @Reference_ID, @Transaction_ID, @Approval, @Processed_Date, @Type]  
     end 

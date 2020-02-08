@@ -21,6 +21,7 @@ PLATFORMS
 
 DEPENDENCIES
   rspec
+  rspec-core
 
 RUBY VERSION
    ruby 2.7.0p0

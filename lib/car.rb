@@ -12,7 +12,26 @@ end
 
 # binding.pry
 
-# car = Item.new("Tesla", 100_000)
+# Payments.name 
+ 
+car1 = Car.new("Tesla", 100_000)
+
+p car1.name # => "Tesla"
+
+
+# p car1.name = "Tesla"
+
+# p car1.name
+
+#undefined method `name' for #<Car:0x00007fe214805ea0>
+
+
+
+
+
+
+
+
 # p car.class
 # p car.class.class
 # p car.class.superclass
