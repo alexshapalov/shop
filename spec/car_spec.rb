@@ -1,19 +1,24 @@
-# require 'rspec'
+require 'rspec'
 require_relative "../lib/car.rb"
+require "factory_bot"
+# require "../spec/factories"
+require_relative "../spec/factories/car_spec.rb"
+include FactoryBot::Syntax::Methods
 
-describe Car do  
-  context 'create new car' do
+describe Car do 
+  let(:car) { build(:car) }
 
-    before(:each) do
-      @car_item = Car.new("Tesla", 120_000)
-    end
-
+  describe '::attribute' do
+    # before(:each) do
+    #   @car_item = Car.new("Tesla", 120_000)
+    # end 
+    
     it 'car with name' do
-      expect(@car_item.name).to eq("Tesla")
+      build(:car).name # Jane Doe
     end
-
+  
     it 'car with price' do
-      expect(@car_item.price).to eq(120_000)
+      expect(car.price).to eq(120_000)
     end
   end
 end

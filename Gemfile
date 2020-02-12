@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rspec'
-gem 'rspec-core'
+# gem 'rspec-core'
+gem 'factory_bot'
 
 # gem 'selenium-webdriver'
 # gem 'rest-client'

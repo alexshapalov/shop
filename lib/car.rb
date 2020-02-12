@@ -3,7 +3,7 @@
 class Car
   attr_accessor :name, :price, :options
 
-  def initialize(name, price, options = {})
+  def initialize(name=nil, pric=nil, options = {})
     @name = name
     @price = price  
     @options = options
@@ -13,14 +13,10 @@ end
 # binding.pry
 
 # Payments.name 
- 
-car1 = Car.new("Tesla", 100_000)
+# car1 = Car.new("Tesla", 100_000)
 
-p car1.name # => "Tesla"
-
-
+# p car1.name # => "Tesla"
 # p car1.name = "Tesla"
-
 # p car1.name
 
 #undefined method `name' for #<Car:0x00007fe214805ea0>
