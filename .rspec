@@ -1,2 +1,5 @@
 --format documentation
 --require 'rspec'
+--color
+--warnings
+--order random

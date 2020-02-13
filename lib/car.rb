@@ -3,7 +3,7 @@
 class Car
   attr_accessor :name, :price, :options
 
-  def initialize(name=nil, pric=nil, options = {})
+  def initialize(name=nil, price=nil, options = {})
     @name = name
     @price = price  
     @options = options
@@ -20,13 +20,6 @@ end
 # p car1.name
 
 #undefined method `name' for #<Car:0x00007fe214805ea0>
-
-
-
-
-
-
-
 
 # p car.class
 # p car.class.class
