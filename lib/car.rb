@@ -8,6 +8,32 @@ class Car
     @price = price  
     @options = options
   end
+
+  def item_name
+    @name
+  end
+
+  def price
+    @price
+  end
+
+  ALL_CUR = {
+    uah: 26,
+    eur: 31
+  }
+ 
+  def total_price
+    @price * @ammount
+  end
+
+  def convertor
+    cur = ALL_CUR[@cur]
+    cur * total_price
+  end
+
+  def ccurrency
+    ALL_CUR[@cur]
+  end
 end
 
 # binding.pry

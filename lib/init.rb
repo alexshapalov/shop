@@ -1,5 +1,5 @@
 require_relative 'shop_methods'
-require_relative 'car' 
+require_relative 'car'
 require_relative 'cart'
 
 cart = Cart.new
