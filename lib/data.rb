@@ -1,4 +1,8 @@
-module Data_Json
+class Data_Json
+  # def name
+  #   ['ss', 1, { id: 1, name: "aaa"}, {}, {}]
+  # end
+
   def orders
     [
       { 
